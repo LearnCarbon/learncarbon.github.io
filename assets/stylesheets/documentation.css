@@ -6,6 +6,13 @@ a:hover{
     color: #07908E;
     transition: 0.2s;
 }
+header{
+    background: url('../background/main_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 nav{
     display: flex;
     justify-content: center;
