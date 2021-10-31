@@ -61,13 +61,151 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1 style="color: #07908E;">
+            <div class="col-12">
+                <h2 class="text-center my-5" style="color: #07908E;">
                     <img src="./assets/logo/learncarbon_logo_without_text.png" width="300" alt="">
                     <br>
                     Documentation
-                </h1>
+                </h2>
+                <h2>
+                    Raw Dataset on embodied carbon:
+                </h2>
+                <p>
+                    We are using the Embodied Carbon
+                    Benchmark Study by Carbon Leadership Forum (LCA for Low Carbon Study, Part One, 2017) that includes
+                    data on Research
+                    Database Building Characteristics and LCA Parameters. The LCA data includes stage A and B for most
+                    datapoints. Detailed
+                    documentation on the study can be found here: <a
+                        href="https://carbonleadershipforum.org/embodied-carbon-benchmark-study-1/"
+                        target="_blank">https://carbonleadershipforum.org/embodied-carbon-benchmark-study-1/</a>
+                    <br>
+                    <br>
+                    The limitations we faced were the lack of material type and quantities, mentioned as "Of note, while
+                    the primary
+                    structural material type was collected in the confidential database, this information is not
+                    included in the research
+                    database."
+                    <br><br>
+                    Therefore, we studied the basic principles that helped us assign structural category against each
+                    data point. We
+                    identified four main types of structural types:
+                </p>
+                <ol>
+                    <li>
+                        Wood
+                    </li>
+                    <li>
+                        Wood-Concrete Hybrid (20 % concrete & 80 % wood in material quantities, while 38% concrete & 62%
+                        wood in embodied carbon
+                        calculation)
+                    </li>
+                    <li>
+                        Reinforced - Concrete
+                    </li>
+                    <li>
+                        Steel-concrete (20 % steel & 80 % concrete in material quantities, while 77% steel & 23%
+                        concrete in embodied carbon
+                        calculation)
+                    </li>
+                </ol>
+                <br>
+                <p>
+                    The basis of assigning structural types are as follows:
+                </p>
+                <ol>
+                    <li>
+                        If TCO2 is more than 300 and floor is between 1-6 - it is an RC building, else is Wood
+                    </li>
+                    <li>
+                        If building is more than 25 floors and more than 1000 TC02 its a steel concrete, otherwise its a
+                        concrete building
+                    </li>
+                    <li>
+                        If TCO2 is more than 250 and floor is between 1-6 - it is an Wood Hybrid
+                    </li>
+                    <li>
+                        If 400TCO2 is 7-14 floors, then we have RC structure
+                    </li>
+                    <li>
+                        If more than 25 and below 300 TCO2, its RC
+                    </li>
+                </ol>
+                <h2>
+                    Data distribution:
+                </h2>
+                <p>
+                    There are some embedded biases in the dataset. For example there are more samples for medium-size
+                    buildings with lower
+                    carbon footprint. Therefore the predictions will be better for this scale. However the input data
+                    are not very
+                    correlated so the models are able to learn and not overfit.
+                </p>
+                <br>
+                <h2>
+                    Model A:
+                </h2>
+                <p>
+                    Scenario A includes a regression model which predicts the CO2 emissions based on the total area,
+                    number of floors,
+                    location, construction type and type of building. As we can see on the graphs, the model is able to
+                    learn this
+                    relationship reaching a mean squared error of 0.016.
+                </p>
+                <br>
+                <h2>
+                    Model B:
+                </h2>
+                <p>
+                    Scenario B includes a classification model which predicts the class of the construction type of the
+                    building based on
+                    the target CO2 emissions, the building type, the total area, the number of floors and the location.
+                    As we can see on the
+                    graphs, the model is able to learn the relationship reaching accuracy of 94%.
+                </p>
+                <br>
+                <h2>
+                    Rhino-Plugin - Flask Server:
+                </h2>
+                <p>
+                    We have linked a user-friendly Rhino plugin built with WPF in c# to a live flask server that calls a
+                    trained ML model to
+                    query the user parameters and display the desired information in the backend. Since this tool
+                    utilizes a flask server,
+                    we can host this on a cloud server to enable the possibility to scale the product. In addition, this
+                    tool can run
+                    entirely in the background where the user would only need to have a valid Rhino 7 license to empower
+                    their design
+                    decisions within the context of climate change and LEARN ABOUT CARBON!
+                </p>
+                <br>
                 <img src="./assets/documentation/documentation.png" class="w-100" alt="">
+                <br>
+                <h2>
+                    References:
+                </h2>
+                <ul type="dash">
+                    <li>
+                        <a href="https://www.britannica.com/technology/construction/Concrete-structures"
+                            target="_blank">https://www.britannica.com/technology/construction/Concrete-structures</a>
+                    </li>
+                    <li>
+                        <a href="https://upgradedhome.com/how-far-can-a-steel-i-beam-span/"
+                            target="_blank">https://upgradedhome.com/how-far-can-a-steel-i-beam-span/</a>
+                    </li>
+                    <li>
+                        <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13139"
+                            target="_blank">https://onlinelibrary.wiley.com/doi/10.1111/jiec.13139</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ecohome.net/guides/1010/how-wood-structures-compare-to-steel-and-concrete/"
+                            target="_blank">https://www.ecohome.net/guides/1010/how-wood-structures-compare-to-steel-and-concrete/</a>
+                    </li>
+                    <li>
+                        <a href="https://engenuiti.com/our-thinking/commercial-buildings-towards-hybrid-framing"
+                            target="_blank">https://engenuiti.com/our-thinking/commercial-buildings-towards-hybrid-framing</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
