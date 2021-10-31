@@ -44,6 +44,6 @@ nav div a{
     transition: 0.3s;
     border: 1px solid #07908E;
 }
-#problem_statement h4, #solution h4, #demo h4, #demo h5, #benefits h4, #team h4, #limitations h4, #future_work h4 {
+#problem_statement h4, #solution h4, #demo h4, #demo h5, #benefits h4, #team h4, #limitations h4, #future_work h4, #acknowledgement h4 {
     color: #07908E;
 }
