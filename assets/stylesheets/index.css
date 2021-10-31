@@ -20,7 +20,7 @@ nav div a{
     color: black;
 }
 @media screen and (max-width: 992px){
-    .header_text, .problem_image, .solution_snapshot{
+    .header_text, .problem_image, .solution_snapshot, .benefit_text{
         text-align: center !important;
     }
 }
