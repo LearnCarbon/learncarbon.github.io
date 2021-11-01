@@ -16,7 +16,6 @@ $(document).ready(function () {
 });
 
 $("#demo_video1").click(function () {
-    alert(1);
     var video = $("#demo_video1").get(0);
     if (video.paused) {
         video.play();
