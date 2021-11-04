@@ -16,21 +16,31 @@ $(document).ready(function () {
 });
 
 $("#demo_video1").click(function () {
-    var video = $("#demo_video1").get(0);
-    if (video.paused) {
-        video.play();
-        $("#demo_video2").stop();
-        $("#demo_video2").stop();
-        $("#demo_video3").stop();
-        $("#demo_video4").stop();
-        $(".play").hide();
-        $(".pause").show();
-    } else {
-        video.pause();
-        $(".play").show();
-        $(".pause").hide();
-    }
-    return false;
+    $("#demo_video1").get(0).play();
+    $("#demo_video2").get(0).pause();
+    $("#demo_video3").get(0).pause();
+    $("#demo_video4").get(0).pause();
+});
+
+$("#demo_video2").click(function () {
+    $("#demo_video2").get(0).play();
+    $("#demo_video1").get(0).pause();
+    $("#demo_video3").get(0).pause();
+    $("#demo_video4").get(0).pause();
+});
+
+$("#demo_video3").click(function () {
+    $("#demo_video3").get(0).play();
+    $("#demo_video1").get(0).pause();
+    $("#demo_video2").get(0).pause();
+    $("#demo_video4").get(0).pause();
+});
+
+$("#demo_video4").click(function () {
+    $("#demo_video4").get(0).play();
+    $("#demo_video1").get(0).pause();
+    $("#demo_video2").get(0).pause();
+    $("#demo_video3").get(0).pause();
 });
 
 function stop(a, b, c) {
