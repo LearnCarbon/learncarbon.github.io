@@ -2,6 +2,9 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+h2{
+    color: #07908E;
+}
 a:hover{
     color: #07908E;
     transition: 0.2s;
@@ -26,31 +29,9 @@ nav div a{
     text-decoration: none;
     color: black;
 }
-@media screen and (max-width: 992px){
-    .header_text, .problem_image, .solution_snapshot, .benefit_text{
-        text-align: center !important;
-    }
-}
 .nav_circle{
     background-color: #07908E;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-}
-.download_button{
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    padding: 5px 10px;
-    font-size: 18px;
-    border-radius: 2px;
-}
-.download_button:hover{
-    background-color: #07908E;
-    color: white;
-    transition: 0.3s;
-    border: 1px solid #07908E;
-}
-#problem_statement h4, #solution h4, #demo h4, #demo h2, #benefits h4, #team h4, #limitations h4, #future_work h4, #acknowledgement h4 {
-    color: #07908E;
 }
