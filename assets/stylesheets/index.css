@@ -1,14 +1,16 @@
-
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
-a:hover{
+
+a:hover {
     transition: 0.2s;
 }
-span, .text-primary, #problem_statement h4, #solution h4, #demo h4, #demo h2, #benefits h4, #team h4, #limitations h4, #future_work h4, #acknowledgement h4. a:hover{
-    color: #07908E;
+
+span, .text-primary, #problem_statement h4, #solution h4, #demo h4, #demo h2, #benefits h4, #team h4, #limitations h4, #future_work h4, #acknowledgement h4. a:hover {
+    color: #07908E !important;
 }
-header{
+
+header {
     background: url('../background/main_image.jpg');
     background-position: center;
     background-size: cover;
@@ -16,50 +18,62 @@ header{
     background-attachment: fixed;
     min-height: 800px;
 }
-h5{
+
+h5 {
     line-height: 140%;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-nav div{
+
+nav div {
     margin: 0 10px;
 }
-nav div a{
+
+nav div a {
     text-decoration: none;
     color: black;
 }
-.problem_image, .solution_snapshot{
+
+.problem_image, .solution_snapshot {
     text-align: right;
 }
-.font-130{
+
+.font-130 {
     font-size: 130%;
 }
-.font-140{
+
+.font-140 {
     font-size: 140%;
 }
-.font-150{
+
+.font-150 {
     font-size: 150%;
 }
-.heading{
+
+.heading {
     text-decoration: underline #07908E;
     color: #07908E;
     font-weight: 600;
     text-transform: uppercase;
 }
-.section_heading_image{
+
+.section_heading_image {
     max-width: 300px;
 }
-.nav_circle{
+
+.nav_circle {
     background-color: #07908E;
     height: 10px;
     width: 10px;
     border-radius: 50%;
 }
-.download_button{
+
+.download_button {
     text-decoration: none;
     color: black;
     border: 1px solid black;
@@ -67,18 +81,21 @@ nav div a{
     font-size: 18px;
     border-radius: 2px;
 }
-.download_button:hover{
+
+.download_button:hover {
     background-color: #07908E;
     color: white;
     transition: 0.3s;
     border: 1px solid #07908E;
     font-weight: 500;
 }
-footer{
+
+footer {
     background-color: #242424;
 }
-@media screen and (max-width: 992px){
-    .header_text, .problem_image, .solution_snapshot, .benefit_text{
+
+@media screen and (max-width: 992px) {
+    .header_text, .problem_image, .solution_snapshot, .benefit_text {
         text-align: center !important;
     }
 }
