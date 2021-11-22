@@ -1,35 +1,41 @@
-
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
-h2{
+
+h2 {
     color: #07908E;
 }
-a:hover{
-    color: #07908E;
+
+a:hover {
+    color: #07908E !important;
     transition: 0.2s;
 }
-header{
+
+header {
     background: url('../background/main_image.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-nav div{
+
+nav div {
     margin: 0 10px;
 }
-nav div a{
+
+nav div a {
     text-decoration: none;
     color: black;
 }
-.nav_circle{
+
+.nav_circle {
     background-color: #07908E;
     height: 10px;
     width: 10px;

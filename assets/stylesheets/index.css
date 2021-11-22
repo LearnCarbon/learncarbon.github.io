@@ -6,7 +6,7 @@ a:hover {
     transition: 0.2s;
 }
 
-span, .text-primary, #problem_statement h4, #solution h4, #demo h4, #demo h2, #benefits h4, #team h4, #limitations h4, #future_work h4, #acknowledgement h4. a:hover {
+span, .text-primary, #problem_statement h4, #solution h4, #demo h4, #demo h2, #benefits h4, #team h4, #limitations h4, #future_work h4, #acknowledgement h4, a:hover {
     color: #07908E !important;
 }
 
@@ -84,7 +84,7 @@ nav div a {
 
 .download_button:hover {
     background-color: #07908E;
-    color: white;
+    color: white !important;
     transition: 0.3s;
     border: 1px solid #07908E;
     font-weight: 500;
